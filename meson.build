@@ -7,7 +7,7 @@
 #
 # CREATED:          10/30/2021
 #
-# LAST EDITED:      11/02/2021
+# LAST EDITED:      11/03/2021
 ###
 
 project('libods', 'c')
@@ -16,6 +16,7 @@ ods = library(
   'ods',
   'libods/libods.c',
   'libods/compression.c',
+  'libods/compression/mimetype.c',
   dependencies: [archive],
   c_args: ['-Wall', '-Wextra', '-O0', '-std=c17'],
   version: '0.1.0', soversion: '0',
