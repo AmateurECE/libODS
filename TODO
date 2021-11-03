@@ -1,0 +1,5 @@
+* Refactor for cleaner architecture
+* Get an actual test runner for unit testing
+* Integrate clang-tidy and clang-format
+* Test install configuration with meson
+* Write packaging scripts for Conan, Arch, and Debian
