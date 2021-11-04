@@ -88,6 +88,7 @@ static OdsResult parse_archive_entries(OdsFile* file, struct archive* reader,
 
 static const struct EntryParser parsers[] = {
     { "mimetype", parse_mimetype },
+    { "content.xml", parse_content },
     { 0 /* sentinel */ },
 };
 

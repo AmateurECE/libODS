@@ -26,7 +26,9 @@ struct EntryParser {
 };
 
 OdsResult parse_mimetype(OdsFile* file, struct archive* reader,
-    struct archive_entry*);
+    struct archive_entry* entry);
+OdsResult parse_content(OdsFile* file, struct archive* reader,
+    struct archive_entry* entry);
 
 #endif // EDT_PARSERS
 
